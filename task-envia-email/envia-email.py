@@ -8,7 +8,7 @@ class Email():
 
     def envia_email(subject, sender, recipients, deadline, link):
 
-        message = f"Olá aluno você está recebendo esta mensagem pois foi liberado o formulário a ser preenchido até a data de {deadline}. Você consegue preencher o formulário de avaliação do semestre de pós-graduação clicando nesse link: {link}"
+        message = f"Olá aluno você está recebendo esta mensagem pois foi liberado o formulário a ser preenchido até a data de {deadline}.\nVocê consegue preencher o formulário de avaliação do semestre de pós-graduação clicando nesse link: {link}"
 
 
         # Criando a mensagem MIME com codificação UTF-8
