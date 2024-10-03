@@ -22,7 +22,9 @@ class Email():
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
 
-        # Fazendo login no servidor
+        #TODO: MUDAR ISSO AQUI PARA ALGUMA VARIÁVEL DE AMBIENTE OU SERVIÇO DE AUTENTICAÇÃO
+        # Fazendo login no servidor   |
+        #                             v
         server.login(sender, 'oxji jsrr ryry mlyu')
 
         # Enviando o e-mail
@@ -36,7 +38,6 @@ class Email():
 if __name__ == "__main__":
 
     sender = 'esi.code.proj@gmail.com'
-    password = os.getenv('ESI_EMAIL_PASS')
     recipients = ["kennedy12kennedy@gmail.com", "menezes_kennedy@hotmail.com", "kennedy_menezes@usp.br"]
     subject = "Link para Formulário Semestral"
     deadline = "2024-12-12"
